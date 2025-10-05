@@ -1,0 +1,13 @@
+prompts:
+  - "Translate to Spanish: Hello world"
+  - "Summarize: The quick brown fox jumps over the lazy dog"
+
+providers:
+  # Puedes usar un modelo open-source con Ollama (gratis)
+  - ollama:llama3
+
+tests:
+  - description: Must contain Spanish word
+    assert:
+      - type: contains
+        value: "Hola"

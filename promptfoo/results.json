@@ -1,0 +1,288 @@
+{
+  "evalId": "eval-uP9-2025-10-05T20:54:19",
+  "results": {
+    "version": 3,
+    "timestamp": "2025-10-05T20:54:19.448Z",
+    "prompts": [
+      {
+        "raw": "Translate to Spanish: Hello world",
+        "label": "Translate to Spanish: Hello world",
+        "id": "d2967cbfcc2838a98c6b4ca66dcaff9fcb65884d8f2bdb66f2908c5cd7f27b7d",
+        "provider": "ollama:completion:llama3",
+        "metrics": {
+          "score": 0,
+          "testPassCount": 0,
+          "testFailCount": 1,
+          "testErrorCount": 0,
+          "assertPassCount": 0,
+          "assertFailCount": 1,
+          "totalLatencyMs": 18,
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "total": 0,
+            "numRequests": 1,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0
+              }
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "cost": 0
+        }
+      },
+      {
+        "raw": "Summarize: The quick brown fox jumps over the lazy dog",
+        "label": "Summarize: The quick brown fox jumps over the lazy dog",
+        "id": "710848a9cb15303e5ac4473360268e2d193f89d49e19e23455978cae9fb4b7f8",
+        "provider": "ollama:completion:llama3",
+        "metrics": {
+          "score": 0,
+          "testPassCount": 0,
+          "testFailCount": 1,
+          "testErrorCount": 0,
+          "assertPassCount": 0,
+          "assertFailCount": 1,
+          "totalLatencyMs": 26,
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "total": 0,
+            "numRequests": 1,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0
+              }
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "cost": 0
+        }
+      }
+    ],
+    "results": [
+      {
+        "cost": 0,
+        "error": "Expected output to contain \"Hola\"",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "reason": "Expected output to contain \"Hola\"",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Expected output to contain \"Hola\"",
+              "assertion": {
+                "type": "contains",
+                "value": "Hola"
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "418a001e-daef-4475-af7a-fa8e0795b29d",
+        "latencyMs": 18,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Translate to Spanish: Hello world",
+          "label": "Translate to Spanish: Hello world"
+        },
+        "promptId": "d2967cbfcc2838a98c6b4ca66dcaff9fcb65884d8f2bdb66f2908c5cd7f27b7d",
+        "promptIdx": 0,
+        "provider": {
+          "id": "ollama:completion:llama3",
+          "label": ""
+        },
+        "response": {
+          "output": ""
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "description": "Must contain Spanish word",
+          "assert": [
+            {
+              "type": "contains",
+              "value": "Hola"
+            }
+          ],
+          "vars": {},
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "vars": {},
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0,
+        "error": "Expected output to contain \"Hola\"",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "reason": "Expected output to contain \"Hola\"",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Expected output to contain \"Hola\"",
+              "assertion": {
+                "type": "contains",
+                "value": "Hola"
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "12c5dfd8-5cb4-40f0-83e4-5707a8351f2e",
+        "latencyMs": 26,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Summarize: The quick brown fox jumps over the lazy dog",
+          "label": "Summarize: The quick brown fox jumps over the lazy dog"
+        },
+        "promptId": "710848a9cb15303e5ac4473360268e2d193f89d49e19e23455978cae9fb4b7f8",
+        "promptIdx": 1,
+        "provider": {
+          "id": "ollama:completion:llama3",
+          "label": ""
+        },
+        "response": {
+          "output": ""
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "description": "Must contain Spanish word",
+          "assert": [
+            {
+              "type": "contains",
+              "value": "Hola"
+            }
+          ],
+          "vars": {},
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "vars": {},
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      }
+    ],
+    "stats": {
+      "successes": 0,
+      "failures": 2,
+      "errors": 0,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 0,
+        "total": 0,
+        "numRequests": 2,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0
+          }
+        }
+      }
+    }
+  },
+  "config": {
+    "prompts": [
+      "Translate to Spanish: Hello world",
+      "Summarize: The quick brown fox jumps over the lazy dog"
+    ],
+    "providers": [
+      "ollama:llama3"
+    ],
+    "tests": [
+      {
+        "description": "Must contain Spanish word",
+        "assert": [
+          {
+            "type": "contains",
+            "value": "Hola"
+          }
+        ]
+      }
+    ],
+    "sharing": false,
+    "outputPath": [
+      "results.json"
+    ],
+    "extensions": []
+  },
+  "shareableUrl": null,
+  "metadata": {
+    "promptfooVersion": "0.118.11",
+    "nodeVersion": "v24.9.0",
+    "platform": "win32",
+    "arch": "x64",
+    "exportedAt": "2025-10-05T20:54:19.511Z",
+    "evaluationCreatedAt": "2025-10-05T20:54:19.448Z"
+  }
+}
